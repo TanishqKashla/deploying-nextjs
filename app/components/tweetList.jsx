@@ -23,9 +23,9 @@ const TweetList = async () => {
     return (
         <>
             {tweets?.map((tweet) => (
-                <div>
-                    <h3>{tweet.title}</h3>
-                    <p>{tweet.body}</p>
+                <div key={tweet._id}>
+                    <h3 key={tweet._id}>{tweet.title}</h3>
+                    <p key={tweet._id}>{tweet.body}</p>
                 </div>
             ))}
         </>
