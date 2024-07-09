@@ -1,9 +1,12 @@
 import React from 'react'
+import TweetList from './components/tweetList'
 
-const page = () => {
+const GeneralStore = () => {
   return (
-    <div>page</div>
+    <div>
+      <TweetList />
+    </div>
   )
 }
 
-export default page
+export default GeneralStore
