@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const getTweets = async () => {
     try {
-        const res = await fetch('http:localhost:3000/api/tweets', { cache: "no-store" })
+        const res = await fetch('http:localhost:3000/api/tweets')
 
         if (!res.ok) {
             throw new Error('Failed to fetch tweets')
