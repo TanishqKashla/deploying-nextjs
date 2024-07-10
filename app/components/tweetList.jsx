@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const getTweets = async () => {
     try {
-        const res = await fetch('http:localhost:3000/api/tweets')
+        const res = await fetch('https://deploying-next-tau.vercel.app/api/tweets')
 
         if (!res.ok) {
             throw new Error('Failed to fetch tweets')
